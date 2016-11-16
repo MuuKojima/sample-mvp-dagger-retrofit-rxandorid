@@ -9,14 +9,14 @@ import dagger.Provides;
 
 @Module
 public class ExchangeRateModule {
-    private final ExchangeRateView mView;
+    private final ExchangeRateContract.View mView;
 
-    public ExchangeRateModule(ExchangeRateView mView) {
-        this.mView = mView;
+    public ExchangeRateModule(ExchangeRateContract.View view) {
+        this.mView = view;
     }
 
     @Provides
-    ExchangeRateView provideExchangeRateView() {
+    ExchangeRateContract.View provideExchangeRateView() {
         return mView;
     }
 }

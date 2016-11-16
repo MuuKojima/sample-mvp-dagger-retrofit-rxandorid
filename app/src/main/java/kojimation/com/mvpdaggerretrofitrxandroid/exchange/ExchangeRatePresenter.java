@@ -15,12 +15,12 @@ import rx.schedulers.Schedulers;
  * Created by muukojima on 2016/11/15.
  */
 
-public class ExchangeRatePresenter {
+public class ExchangeRatePresenter implements ExchangeRateContract.Presenter {
     private Retrofit mRetrofit;
-    private ExchangeRateView mView;
+    private ExchangeRateContract.View mView;
 
     @Inject
-    public ExchangeRatePresenter(Retrofit retrofit, ExchangeRateView view) {
+    public ExchangeRatePresenter(Retrofit retrofit, ExchangeRateContract.View view) {
         this.mRetrofit = retrofit;
         this.mView = view;
     }

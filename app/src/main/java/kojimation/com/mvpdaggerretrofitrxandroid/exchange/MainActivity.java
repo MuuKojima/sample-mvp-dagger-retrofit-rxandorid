@@ -11,7 +11,7 @@ import kojimation.com.mvpdaggerretrofitrxandroid.AppApplication;
 import kojimation.com.mvpdaggerretrofitrxandroid.R;
 import kojimation.com.mvpdaggerretrofitrxandroid.data.ExchangeRateResponse;
 
-public class MainActivity extends AppCompatActivity implements ExchangeRateView {
+public class MainActivity extends AppCompatActivity implements ExchangeRateContract.View {
 
     @Inject
     ExchangeRatePresenter mPresenter;
