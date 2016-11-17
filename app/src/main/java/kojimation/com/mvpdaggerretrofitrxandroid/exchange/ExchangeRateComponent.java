@@ -9,7 +9,7 @@ import kojimation.com.mvpdaggerretrofitrxandroid.data.AppComponent;
  */
 
 @PerActivity
-@Component(dependencies = {AppComponent.class, ExchangeRateModule.class})
+@Component(dependencies = AppComponent.class, modules = ExchangeRateModule.class)
 public interface ExchangeRateComponent {
     void inject(MainActivity activity);
 }
